@@ -1,0 +1,36 @@
+.myNav{
+    height: 60px;
+    width: 100%;
+    background-color: darkcyan;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.setNavWidth{
+    width: 500px;
+}
+h4{
+    margin: 0;
+}
+.logo{
+    color:white;
+    margin-left: 40px;
+}
+.navUL{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navUL>a{
+    list-style: none;
+    color:white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.navItem{
+    transition: all 0.6s;
+}
+.navItem:hover{
+    transform: translateY(-5px);
+    border-bottom: 2px solid rgba(206, 137, 11, 0.863);
+}

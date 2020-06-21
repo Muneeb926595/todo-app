@@ -1,0 +1,33 @@
+.myTodoList{
+    margin-left: 50px;
+    list-style: none;
+}
+.myTodoListItem{
+    border: 1px solid;
+    background-color: aqua;
+    border-radius:6px;
+    padding:8px;
+    width:92%;
+    margin-bottom: 5px;
+}
+.scrollable {
+    height: 320px;
+    overflow-y: auto;
+}
+.makeItFlex{
+    display:flex;
+    justify-content: space-between;
+}
+.star {
+    visibility:hidden;
+    font-size:30px;
+    margin-right: 40px;
+    cursor:pointer;
+}
+.star:before {
+    content: "\2606";
+    visibility:visible;
+ }
+ .star:checked:before {
+    content: "\2605";
+ }

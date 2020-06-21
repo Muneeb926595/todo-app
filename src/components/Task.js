@@ -1,8 +1,6 @@
 import React,{useContext} from 'react';
-import {GlobalContext} from './TasksContext';
 import '../taskItem.css'
 function Task({task}){
-    const {deleteTask}=useContext(GlobalContext);
     return (
             <li className="myTodoListItem makeItFlex">
                 <p>{task.Text}</p>

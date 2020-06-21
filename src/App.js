@@ -9,9 +9,6 @@ function App() {
   return (
     <GlobalProvider>
       <NavBar/>
-      <marquee >
-           The navbar part is not completed yet but it will be completed very soon.This is just the initial release of my React Todo App.
-      </marquee>
       <Heading/>
       <TaskList/>
       <Footer/> 

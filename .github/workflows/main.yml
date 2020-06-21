@@ -37,4 +37,4 @@ jobs:
       run: npm install -g surge
      
     - name: deploying on surge
-      run: surge ./build muneeb-expence-tracker-app.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./build muneeb-todo-app.surge.sh --token ${{secrets.SURGE_TOKEN}}

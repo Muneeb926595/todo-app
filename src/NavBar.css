@@ -1,7 +1,7 @@
 .myNav{
     height: 60px;
     width: 100%;
-    background-color: darkcyan;
+    background-color: #192A56;
     display:flex;
     justify-content: space-between;
     align-items: center;

@@ -11,11 +11,12 @@
 .foot{
   width:90%;
   margin-left:5%;
-  background-color: rgb(216, 43, 43);
+  background-color: #586cb7;
   position: absolute;
   top:85%;
   height: 60px;
   color:white;
+  border:none;
 }
 .plus-sign{
   color:white;
@@ -41,4 +42,6 @@ button:hover{
   margin-left:9%;
   height: 27px;
   padding:10px;
+  border-radius: 5px;
+  border:none;
 }

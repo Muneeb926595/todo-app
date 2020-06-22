@@ -8,6 +8,7 @@ function Footer(){
     const addingTask= e =>{
         e.preventDefault();
 
+
         const newTask={
             id:Math.floor(Math.random()*1000000),
             Text

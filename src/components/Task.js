@@ -6,7 +6,11 @@ function Task({task}){
     return (
             <li className="myTodoListItem makeItFlex">
 
-                <p>{task.Text}</p>
+                <div style={{display:'flex',margin:'5px', alignItems: 'center'}}>
+                    <input type="checkbox" style={{marginRight:'10px'}} />
+                    <p>{task.Text}</p>
+                </div>
+                
                 <span style={{display:'flex',margin:'5px'}}>
                     <input type="checkbox" className="star" onChange={()=>{alert("Item Added To Important")}}/>
                     <button style={{border:'none'}} onClick={(e)=>{

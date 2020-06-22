@@ -9,7 +9,7 @@ function NavBar(){
             <div className="setNavWidth">
                 <ul className="navUL">
                     <a href="../../public/index.html"><li className="navItem">Tasks</li></a>
-                    <a href="../../public/index.html"><li className="navItem">Planned</li></a>
+                    <a href="../../public/index.html"><li className="navItem">Completed</li></a>
                     <a href="../../public/index.html"><li className="navItem">Important</li></a>
                 </ul>
             </div>

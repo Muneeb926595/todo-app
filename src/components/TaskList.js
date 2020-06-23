@@ -6,7 +6,13 @@ import '../taskItem.css'
 function myImportantFunc(tasks)
 {
     let myArray=[]
-    tasks.map(task=>{if(task.isImportant){myArray.push(task)}return;})
+    for(let i=0;i<tasks.length;i++)
+    {
+         if(tasks[i].isImportant)
+         {
+             myArray.push(tasks[i])
+         }
+    }
     return(
         myArray.map(task=><Task key={task.id} task={task}/>)
     )
@@ -14,7 +20,13 @@ function myImportantFunc(tasks)
 function myCompletedFunc(tasks)
 {
     let myArray=[]
-    tasks.map(task=>{if(task.isCompleted){myArray.push(task)}return;})
+    for(let i=0;i<tasks.length;i++)
+    {
+         if(tasks[i].isCompleted)
+         {
+             myArray.push(tasks[i])
+         }
+    }
     return(
         myArray.map(task=><Task key={task.id} task={task}/>)
     )

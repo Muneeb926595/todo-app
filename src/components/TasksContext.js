@@ -27,7 +27,6 @@ const GlobalProvider=({children})=>{
             if(task.id===id){
                 task.isCompleted=!(task.isCompleted);
             }
-            return;
         })
     }
 
@@ -36,7 +35,6 @@ const GlobalProvider=({children})=>{
             if(task.id===id){
                 task.isImportant=!(task.isImportant);
             }
-            return;
         })
     }
     return(

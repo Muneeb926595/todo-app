@@ -26,6 +26,7 @@ const GlobalProvider=({children})=>{
         state.tasks.map(task=>{
             if(task.id===id){
                 task.isCompleted=!(task.isCompleted);
+                return;
             }
         })
     }

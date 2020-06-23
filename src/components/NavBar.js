@@ -1,5 +1,6 @@
 import React from 'react';
 import '../NavBar.css'
+import {Link} from 'react-router-dom';
 function NavBar(){
     return(
         <div className='myNav'>
@@ -8,9 +9,10 @@ function NavBar(){
             </div>
             <div className="setNavWidth">
                 <ul className="navUL">
-                    <a href="../../public/index.html"><li className="navItem">Tasks</li></a>
-                    <a href="../../public/index.html"><li className="navItem">Completed</li></a>
-                    <a href="../../public/index.html"><li className="navItem">Important</li></a>
+                    <Link to="/"><li className="navItem">Tasks</li></Link>
+                    <Link to="/completed"><li className="navItem">Completed</li></Link>
+                    <Link to="/important"><li className="navItem">Important</li></Link>
+                    <Link to="/about"><li className="navItem">About</li></Link>
                 </ul>
             </div>
         </div>

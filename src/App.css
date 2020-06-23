@@ -47,3 +47,11 @@ button:hover{
   border-radius: 5px;
   border:none;
 }
+.myIntro{
+  width:70%;
+  margin: auto;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 18px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

@@ -11,7 +11,9 @@ function Footer(){
 
         const newTask={
             id:Math.floor(Math.random()*1000000),
-            Text
+            Text,
+            isImportant:false,
+            isCompleted:false
         }
         addNewTask(newTask);
         setText('');

@@ -21,8 +21,24 @@ const GlobalProvider=({children})=>{
             payload:id
         });
     }
+    
+    function makeTaskCompleted(id){
+        state.tasks.map(task=>{
+            if(task.id===id){
+                task.isCompleted=!(task.isCompleted);
+            }
+        })
+    }
+
+    function makeTaskImportant(id){
+        state.tasks.map(task=>{
+            if(task.id===id){
+                task.isImportant=!(task.isImportant);
+            }
+        })
+    }
     return(
-        <GlobalContext.Provider value={{tasks:state.tasks,addNewTask,deleteTask}}>
+        <GlobalContext.Provider value={{tasks:state.tasks,addNewTask,deleteTask,makeTaskCompleted,makeTaskImportant}}>
             {children}
         </GlobalContext.Provider>
     )

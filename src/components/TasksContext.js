@@ -23,19 +23,21 @@ const GlobalProvider=({children})=>{
     }
     
     function makeTaskCompleted(id){
-        state.tasks.map(task=>{
-            if(task.id===id){
-                task.isCompleted=!(task.isCompleted);
+        for(let i=0;i<state.tasks.length;i++)
+        {
+            if(state.tasks[i].id===id){
+                state.tasks[i].isCompleted=!(state.tasks[i].isCompleted);
             }
-        })
+        }
     }
 
     function makeTaskImportant(id){
-        state.tasks.map(task=>{
-            if(task.id===id){
-                task.isImportant=!(task.isImportant);
+        for(let i=0;i<state.tasks.length;i++)
+        {
+            if(state.tasks[i].id===id){
+                state.tasks[i].isImportant=!(state.tasks[i].isImportant);
             }
-        })
+        }
     }
     return(
         <GlobalContext.Provider value={{tasks:state.tasks,addNewTask,deleteTask,makeTaskCompleted,makeTaskImportant}}>

@@ -9,12 +9,12 @@ function Task({task}){
             <li className="myTodoListItem makeItFlex">
 
                 <div style={{display:'flex',margin:'5px', alignItems: 'center'}}>
-                    <input type="checkbox" style={{marginRight:'10px'}} onChange={(e)=>{makeTaskCompleted(task.id)}} />
+                    <input type="checkbox" style={{marginRight:'10px'}} onChange={(e)=>{alert("Task Completed");makeTaskCompleted(task.id)}} />
                     <p>{task.Text}</p>
                 </div>
                 
                 <span style={{display:'flex',margin:'5px'}}>
-                    <input type="checkbox" className="star" onChange={(e)=>{makeTaskImportant(task.id)}}/>
+                    <input type="checkbox" className="star" onChange={(e)=>{alert("Task Added To Important");makeTaskImportant(task.id)}}/>
                     <button style={{border:'none'}} onClick={(e)=>{
                         e.preventDefault();
                         deleteTask(task.id);
